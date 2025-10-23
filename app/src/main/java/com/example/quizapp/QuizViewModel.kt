@@ -27,9 +27,7 @@ class QuizViewModel : ViewModel() {
         }
 
         // advance to next question
-        if (_currentQuestionIndex.value < questions.lastIndex) {
-            _currentQuestionIndex.value += 1
-        }
+        _currentQuestionIndex.value += 1
 
         return isCorrect
     }
