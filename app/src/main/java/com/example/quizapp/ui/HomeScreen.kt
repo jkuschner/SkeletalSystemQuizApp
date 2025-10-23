@@ -1,5 +1,6 @@
 package com.example.quizapp.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,6 +19,7 @@ fun HomeScreen(onStartQuizClicked: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background)
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -26,6 +28,7 @@ fun HomeScreen(onStartQuizClicked: () -> Unit) {
         Text(
             text = "Josh's Quiz App",
             style = MaterialTheme.typography.headlineLarge,
+            color = MaterialTheme.colorScheme.onBackground,
             modifier = Modifier.padding(bottom = 32.dp)
         )
 
@@ -33,6 +36,7 @@ fun HomeScreen(onStartQuizClicked: () -> Unit) {
         Text(
             text = "Lets see how much you know about the human skeletal system!",
             style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.onBackground,
             modifier = Modifier.padding(bottom = 48.dp)
         )
 
