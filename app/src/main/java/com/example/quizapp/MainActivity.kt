@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
 import com.example.quizapp.ui.theme.QuizAppTheme
+import com.example.quizapp.ui.HomeScreen
 import com.example.quizapp.navigation.Screen
 import com.example.quizapp.QuizViewModel
 
