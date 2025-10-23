@@ -67,7 +67,7 @@ fun QuizScreen(
 
             // display answer buttons
             currentQuestion?.answers?.forEach { answer ->
-                Button(
+                SkeletonThemedButton(
                     onClick = { viewModel.submitAnswer(answer) },
                     modifier = Modifier
                         .fillMaxWidth()

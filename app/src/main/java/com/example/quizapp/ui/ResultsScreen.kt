@@ -67,7 +67,7 @@ fun ResultsScreen(
             )
 
             // restart button
-            Button(
+            SkeletonThemedButton(
                 onClick = onRestartClicked,
                 modifier = Modifier
                     .fillMaxWidth(0.6f)

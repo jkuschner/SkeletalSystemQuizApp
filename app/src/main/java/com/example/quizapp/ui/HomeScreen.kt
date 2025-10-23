@@ -41,7 +41,7 @@ fun HomeScreen(onStartQuizClicked: () -> Unit) {
         )
 
         // Start Quiz Button
-        Button(
+        SkeletonThemedButton(
             onClick = onStartQuizClicked,
             modifier = Modifier.padding(16.dp)
         ) {
