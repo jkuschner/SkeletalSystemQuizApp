@@ -9,9 +9,9 @@ val sampleQuestions = listOf(
     ),
     Question(
         id = 2,
-        text = "What part of the body does the fundus belong to?",
-        answers = listOf("Spleen", "Heart", "Pancreas", "Stomach"),
-        correctAnswer = "Stomach"
+        text = "What bone is the only bone in the human body that is NOT connected to any other bone?",
+        answers = listOf("Hyoid", "Patella", "Mandible", "Lunate"),
+        correctAnswer = "Hyoid"
     ),
     Question(
         id = 3,
