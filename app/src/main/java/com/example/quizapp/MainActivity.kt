@@ -20,21 +20,17 @@ import androidx.compose.ui.tooling.preview.Preview
 
 import com.example.quizapp.ui.theme.QuizAppTheme
 import com.example.quizapp.ui.HomeScreen
+import com.example.quizapp.ui.QuizScreen
+import com.example.quizapp.ui.ResultsScreen
 import com.example.quizapp.navigation.Screen
 import com.example.quizapp.QuizViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             QuizAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                QuizAppNavigation()
             }
         }
     }
