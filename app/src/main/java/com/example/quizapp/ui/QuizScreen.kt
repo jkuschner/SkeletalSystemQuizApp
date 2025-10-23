@@ -1,11 +1,14 @@
 package com.example.quizapp.ui
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
 import com.example.quizapp.QuizViewModel
@@ -37,7 +40,7 @@ fun QuizScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Compose Quiz") },
+                title = { Text("Skeletal System Quiz") },
                 actions = {
                     Text(text = "Score: $score",
                         modifier = Modifier.padding(end = 16.dp))
@@ -76,6 +79,20 @@ fun QuizScreen(
                 ) {
                     Text(text = answer)
                 }
+            }
+
+            Spacer(Modifier.height(32.dp))
+
+            currentQuestion?.imageResId?.let { resId ->
+                Image(
+                    painter = painterResource(id = resId),
+                    contentDescription = "Context image for question ${currentQuestion.id}",
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxWidth()
+                        .padding(bottom = 16.dp),
+                    contentScale = ContentScale.Fit // Ensures image scales well
+                )
             }
         }
     }
