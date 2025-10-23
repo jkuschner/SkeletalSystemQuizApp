@@ -53,6 +53,8 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     // ViewModel integration for state management across screens
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.foundation.android)
+    implementation(libs.androidx.foundation.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
